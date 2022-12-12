@@ -56,20 +56,28 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SingleTonPattens\Scripts\SingleTon.cs" />
-    <Compile Include="Assets\SingleTonPattens\Scripts\GameManager.cs" />
+    <Compile Include="Assets\FiniteStateMachine\Scripts\BikeTurnState.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeController.cs" />
+    <Compile Include="Assets\SingleTonPattens\Scripts\SingleTon.cs" />
+    <Compile Include="Assets\EventBus\Scripts\RaceEventType.cs" />
+    <Compile Include="Assets\FiniteStateMachine\Scripts\ClientState.cs" />
+    <Compile Include="Assets\EventBus\Scripts\RaceEventBus.cs" />
+    <Compile Include="Assets\SingleTonPattens\Scripts\GameManager.cs" />
+    <Compile Include="Assets\EventBus\Scripts\BikeController.cs" />
+    <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStopState.cs" />
+    <Compile Include="Assets\EventBus\Scripts\ClientEventBus.cs" />
+    <Compile Include="Assets\EventBus\Scripts\CountDownTimer.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStateContext.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStartState.cs" />
-    <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStopState.cs" />
-    <Compile Include="Assets\FiniteStateMachine\Scripts\BikeTurnState.cs" />
-    <Compile Include="Assets\FiniteStateMachine\Scripts\ClientState.cs" />
-    <Compile Include="Assets\EventBus\Scripts\RaceEventType.cs" />
-    <Compile Include="Assets\EventBus\Scripts\RaceEventBus.cs" />
-    <Compile Include="Assets\EventBus\Scripts\CountDownTimer.cs" />
-    <Compile Include="Assets\EventBus\Scripts\BikeController.cs" />
     <Compile Include="Assets\EventBus\Scripts\HUDController.cs" />
-    <Compile Include="Assets\EventBus\Scripts\ClientEventBus.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\InputHandler.cs" />
+    <Compile Include="Assets\CommandPattern\Command_ReadMe.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\ToggleTurbo.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\TurnLeft.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\TurnRight.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\Invoker.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\BikeController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

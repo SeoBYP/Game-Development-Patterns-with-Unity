@@ -63,6 +63,7 @@
     <Compile Include="Assets\Observer\Scripts\BikeController.cs" />
     <Compile Include="Assets\Visitor\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Observer\Scripts\Observer.cs" />
+    <Compile Include="Assets\Visitor\Scripts\ClientVisitor.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\BikeController.cs" />
     <Compile Include="Assets\Observer\Scripts\CameraController.cs" />
     <Compile Include="Assets\Observer\ReadMe.cs" />
@@ -92,9 +93,15 @@
     <Compile Include="Assets\EventBus\Scripts\HUDController.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\InputHandler.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeEngine.cs" />
-    <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
-    <Compile Include="Assets\Visitor\Scripts\ClientVisitor.cs" />
     <Compile Include="Assets\Visitor\Scripts\PickUp.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
+    <Compile Include="Assets\Strategy\ReadMe.cs" />
+    <Compile Include="Assets\Strategy\Scripts\IManeuverBehaviour.cs" />
+    <Compile Include="Assets\Strategy\Scripts\Drone.cs" />
+    <Compile Include="Assets\Strategy\Scripts\BoppingManeuver.cs" />
+    <Compile Include="Assets\Strategy\Scripts\FallbackManeuver.cs" />
+    <Compile Include="Assets\Strategy\Scripts\ClientStrategy.cs" />
+    <Compile Include="Assets\Strategy\Scripts\WeavingManeuver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

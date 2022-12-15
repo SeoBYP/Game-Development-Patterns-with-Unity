@@ -58,21 +58,26 @@
   <ItemGroup>
     <Compile Include="Assets\Visitor\Scripts\BikeShield.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeTurnState.cs" />
+    <Compile Include="Assets\Strategy\Scripts\WeavingManeuver.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeWeapon.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeController.cs" />
     <Compile Include="Assets\Observer\Scripts\BikeController.cs" />
     <Compile Include="Assets\Visitor\Scripts\PowerUp.cs" />
+    <Compile Include="Assets\Strategy\Scripts\BoppingManeuver.cs" />
     <Compile Include="Assets\Observer\Scripts\Observer.cs" />
     <Compile Include="Assets\Visitor\Scripts\ClientVisitor.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\BikeController.cs" />
     <Compile Include="Assets\Observer\Scripts\CameraController.cs" />
     <Compile Include="Assets\Observer\ReadMe.cs" />
+    <Compile Include="Assets\Strategy\Scripts\IManeuverBehaviour.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeController.cs" />
     <Compile Include="Assets\SingleTonPattens\Scripts\SingleTon.cs" />
     <Compile Include="Assets\Observer\Scripts\ClientObserver.cs" />
     <Compile Include="Assets\Visitor\Scripts\IBikeElement.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\TurnLeft.cs" />
+    <Compile Include="Assets\Strategy\Scripts\Drone.cs" />
     <Compile Include="Assets\Visitor\Scripts\IVisitor.cs" />
+    <Compile Include="Assets\Strategy\ReadMe.cs" />
     <Compile Include="Assets\EventBus\Scripts\RaceEventType.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\ClientState.cs" />
     <Compile Include="Assets\EventBus\Scripts\RaceEventBus.cs" />
@@ -94,14 +99,17 @@
     <Compile Include="Assets\CommandPattern\Scripts\InputHandler.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeEngine.cs" />
     <Compile Include="Assets\Visitor\Scripts\PickUp.cs" />
-    <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
-    <Compile Include="Assets\Strategy\ReadMe.cs" />
-    <Compile Include="Assets\Strategy\Scripts\IManeuverBehaviour.cs" />
-    <Compile Include="Assets\Strategy\Scripts\Drone.cs" />
-    <Compile Include="Assets\Strategy\Scripts\BoppingManeuver.cs" />
     <Compile Include="Assets\Strategy\Scripts\FallbackManeuver.cs" />
+    <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
     <Compile Include="Assets\Strategy\Scripts\ClientStrategy.cs" />
-    <Compile Include="Assets\Strategy\Scripts\WeavingManeuver.cs" />
+    <Compile Include="Assets\Decorator\ReadMe.cs" />
+    <Compile Include="Assets\Decorator\Scripts\BikeWeapon.cs" />
+    <Compile Include="Assets\Decorator\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Decorator\Scripts\IWeapon.cs" />
+    <Compile Include="Assets\Decorator\Scripts\WeaponDecorator.cs" />
+    <Compile Include="Assets\Decorator\Scripts\WeaponAttachment.cs" />
+    <Compile Include="Assets\Decorator\Scripts\WeaponConfig.cs" />
+    <Compile Include="Assets\Decorator\Scripts\ClientDecorator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

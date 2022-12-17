@@ -58,21 +58,25 @@
   <ItemGroup>
     <Compile Include="Assets\Visitor\Scripts\BikeShield.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeTurnState.cs" />
+    <Compile Include="Assets\Spatial Partition\Scripts\Track.cs" />
     <Compile Include="Assets\Strategy\Scripts\WeavingManeuver.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeWeapon.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeController.cs" />
     <Compile Include="Assets\Observer\Scripts\BikeController.cs" />
     <Compile Include="Assets\Decorator\Scripts\WeaponConfig.cs" />
+    <Compile Include="Assets\Spatial Partition\Scripts\Segment.cs" />
     <Compile Include="Assets\Visitor\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Strategy\Scripts\BoppingManeuver.cs" />
     <Compile Include="Assets\Decorator\Scripts\WeaponAttachment.cs" />
     <Compile Include="Assets\Observer\Scripts\Observer.cs" />
     <Compile Include="Assets\Visitor\Scripts\ClientVisitor.cs" />
+    <Compile Include="Assets\Spatial Partition\ReadMe.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\BikeController.cs" />
     <Compile Include="Assets\Observer\Scripts\CameraController.cs" />
     <Compile Include="Assets\Observer\ReadMe.cs" />
     <Compile Include="Assets\Strategy\Scripts\IManeuverBehaviour.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeController.cs" />
+    <Compile Include="Assets\Spatial Partition\Scripts\BikeController.cs" />
     <Compile Include="Assets\SingleTonPattens\Scripts\SingleTon.cs" />
     <Compile Include="Assets\Observer\Scripts\ClientObserver.cs" />
     <Compile Include="Assets\Visitor\Scripts\IBikeElement.cs" />
@@ -89,10 +93,12 @@
     <Compile Include="Assets\Decorator\ReadMe.cs" />
     <Compile Include="Assets\Observer\Scripts\Subject.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\ToggleTurbo.cs" />
+    <Compile Include="Assets\Spatial Partition\Scripts\TrackController.cs" />
     <Compile Include="Assets\EventBus\Scripts\BikeController.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStopState.cs" />
     <Compile Include="Assets\Decorator\Scripts\BikeWeapon.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\TurnRight.cs" />
+    <Compile Include="Assets\Spatial Partition\Scripts\SegmentMarker.cs" />
     <Compile Include="Assets\CommandPattern\Command_ReadMe.cs" />
     <Compile Include="Assets\Decorator\Scripts\WeaponDecorator.cs" />
     <Compile Include="Assets\EventBus\Scripts\ClientEventBus.cs" />
@@ -110,12 +116,13 @@
     <Compile Include="Assets\Decorator\Scripts\Weapon.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
     <Compile Include="Assets\Strategy\Scripts\ClientStrategy.cs" />
-    <Compile Include="Assets\Spatial Partition\ReadMe.cs" />
-    <Compile Include="Assets\Spatial Partition\Scripts\Track.cs" />
-    <Compile Include="Assets\Spatial Partition\Scripts\TrackController.cs" />
-    <Compile Include="Assets\Spatial Partition\Scripts\SegmentMarker.cs" />
-    <Compile Include="Assets\Spatial Partition\Scripts\BikeController.cs" />
-    <Compile Include="Assets\Spatial Partition\Scripts\Segment.cs" />
+    <Compile Include="Assets\Adapter\ReadMe.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventorySystem.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventoryItem.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventorySystemAdapter.cs" />
+    <Compile Include="Assets\Adapter\Scripts\SaveLocation.cs" />
+    <Compile Include="Assets\Adapter\Scripts\IInventorySystem.cs" />
+    <Compile Include="Assets\Adapter\Scripts\ClientAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

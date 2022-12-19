@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Adapter\Scripts\ClientAdapter.cs" />
     <Compile Include="Assets\Visitor\Scripts\BikeShield.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeTurnState.cs" />
     <Compile Include="Assets\Spatial Partition\Scripts\Track.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Assets\Observer\Scripts\ClientObserver.cs" />
     <Compile Include="Assets\Visitor\Scripts\IBikeElement.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\TurnLeft.cs" />
+    <Compile Include="Assets\Adapter\Scripts\SaveLocation.cs" />
     <Compile Include="Assets\Strategy\Scripts\Drone.cs" />
     <Compile Include="Assets\Visitor\Scripts\IVisitor.cs" />
     <Compile Include="Assets\Strategy\ReadMe.cs" />
@@ -88,14 +90,19 @@
     <Compile Include="Assets\FiniteStateMachine\Scripts\ClientState.cs" />
     <Compile Include="Assets\EventBus\Scripts\RaceEventBus.cs" />
     <Compile Include="Assets\Observer\Scripts\HUDController.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventoryItem.cs" />
     <Compile Include="Assets\SingleTonPattens\Scripts\GameManager.cs" />
     <Compile Include="Assets\Visitor\ReadMe.cs" />
     <Compile Include="Assets\Decorator\ReadMe.cs" />
+    <Compile Include="Assets\Adapter\Scripts\IInventorySystem.cs" />
     <Compile Include="Assets\Observer\Scripts\Subject.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\ToggleTurbo.cs" />
     <Compile Include="Assets\Spatial Partition\Scripts\TrackController.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventorySystemAdapter.cs" />
+    <Compile Include="Assets\Adapter\Scripts\InventorySystem.cs" />
     <Compile Include="Assets\EventBus\Scripts\BikeController.cs" />
     <Compile Include="Assets\FiniteStateMachine\Scripts\BikeStopState.cs" />
+    <Compile Include="Assets\Adapter\ReadMe.cs" />
     <Compile Include="Assets\Decorator\Scripts\BikeWeapon.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\TurnRight.cs" />
     <Compile Include="Assets\Spatial Partition\Scripts\SegmentMarker.cs" />
@@ -116,13 +123,21 @@
     <Compile Include="Assets\Decorator\Scripts\Weapon.cs" />
     <Compile Include="Assets\CommandPattern\Scripts\Command.cs" />
     <Compile Include="Assets\Strategy\Scripts\ClientStrategy.cs" />
-    <Compile Include="Assets\Adapter\ReadMe.cs" />
-    <Compile Include="Assets\Adapter\Scripts\InventorySystem.cs" />
-    <Compile Include="Assets\Adapter\Scripts\InventoryItem.cs" />
-    <Compile Include="Assets\Adapter\Scripts\InventorySystemAdapter.cs" />
-    <Compile Include="Assets\Adapter\Scripts\SaveLocation.cs" />
-    <Compile Include="Assets\Adapter\Scripts\IInventorySystem.cs" />
-    <Compile Include="Assets\Adapter\Scripts\ClientAdapter.cs" />
+    <Compile Include="Assets\Facade\ReadMe.cs" />
+    <Compile Include="Assets\Facade\Scripts\FuelPump.cs" />
+    <Compile Include="Assets\Facade\Scripts\BikeEngine.cs" />
+    <Compile Include="Assets\Facade\Scripts\CoolingSystem.cs" />
+    <Compile Include="Assets\Facade\Scripts\TurboCharger.cs" />
+    <Compile Include="Assets\Facade\Scripts\ClientFacade.cs" />
+    <Compile Include="Assets\ServiceLocator\ReadMe.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\ServiceLocator.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\ILoggerService.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\IAnalyticsService.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\IAdvertisement.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\Logger.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\Analytics.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\Advertisement.cs" />
+    <Compile Include="Assets\ServiceLocator\Scripts\ClientServiceLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

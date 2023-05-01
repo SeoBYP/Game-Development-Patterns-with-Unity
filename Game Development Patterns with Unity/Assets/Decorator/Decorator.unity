@@ -363,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponConfig: {fileID: 11400000, guid: 6301ddd942865814c8e33b2e93047490, type: 2}
   mainAttachment: {fileID: 11400000, guid: 7003b1d7bf29cd943b1889b17bdec9f5, type: 2}
-  secondaryAttachment: {fileID: 11400000, guid: 16124e6fca70f234f9e300154203a917, type: 2}
+  secondaryAttachment: {fileID: 0}
 --- !u!1 &1718686423
 GameObject:
   m_ObjectHideFlags: 0

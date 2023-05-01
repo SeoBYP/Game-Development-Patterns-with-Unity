@@ -16,7 +16,7 @@ namespace Chapter.Decorator
 
         private void OnGUI()
         {
-            if (!_isWeaponDecorated)
+
             {
                 if(GUILayout.Button("Decorate Weapon"))
                 {
@@ -24,7 +24,7 @@ namespace Chapter.Decorator
                     _isWeaponDecorated = !_isWeaponDecorated;
                 }
             }
-            if (_isWeaponDecorated)
+
             {
                 if(GUILayout.Button("Reset Weapon"))
                 {

@@ -6,38 +6,52 @@ namespace Chapter.Singleton
 {
     public class SingleTon<T> : MonoBehaviour where T : MonoBehaviour
     {
-        private static T _instance;
+        protected static T _instance;
+        public static bool HasInstance => _instance != null;
+        public static T TryGetInstance() => HasInstance ? _instance : null;
+        public static T Current => _instance;
 
-        public static T Instance 
-        { 
-            get 
+        /// <summary>
+        /// 싱글톤 디자인 패턴
+        /// </summary>
+        /// <value>인스턴스</value>
+        public static T Instance
+        {
+            get
             {
                 if (_instance == null)
                 {
                     _instance = FindObjectOfType<T>();
-
-                    if(_instance == null)
+                    if (_instance == null)
                     {
                         GameObject obj = new GameObject();
-                        obj.name = typeof(T).Name;
+                        obj.name = typeof(T).Name + "_AutoCreated";
                         _instance = obj.AddComponent<T>();
                     }
                 }
-                return _instance; 
-            } 
+                return _instance;
+            }
         }
 
-        private void Awake()
+        /// <summary>
+        /// Awake에서 인스턴스를 초기화합니다. 만약 awake를 override해서 사용해야 한다면 base.Awake()를 호출해야 합니다.
+        /// </summary>
+        protected virtual void Awake()
         {
-            if(_instance == null)
+            InitializeSingleton();
+        }
+
+        /// <summary>
+        /// 싱글톤을 초기화합니다.
+        /// </summary>
+        protected virtual void InitializeSingleton()
+        {
+            if (!Application.isPlaying)
             {
-                _instance = this as T;
-                DontDestroyOnLoad(this);
+                return;
             }
-            else
-            {
-                Destroy(gameObject);
-            }
+
+            _instance = this as T;
         }
     }
 

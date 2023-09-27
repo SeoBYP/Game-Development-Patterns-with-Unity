@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chapter.Visitor
 {
-    public interface IBikeElement
+    public interface IVisitorElement
     {
         void Accept(IVisitor visitor);
     }

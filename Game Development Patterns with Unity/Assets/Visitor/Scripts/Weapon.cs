@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Chapter.Visitor
 {
-    public class BikeWeapon : MonoBehaviour, IBikeElement
+    public class Weapon : MonoBehaviour, IVisitorElement
     {
         [Header("Range")]
         public int range = 5;

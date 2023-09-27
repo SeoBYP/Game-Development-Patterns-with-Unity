@@ -8,9 +8,9 @@ namespace Chapter.Visitor
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<BikeController>())
+            if (other.GetComponent<GameController>())
             {
-                other.GetComponent<BikeController>().Accept(powerUp);
+                other.GetComponent<GameController>().Accept(powerUp);
                 Destroy(gameObject);
             }
         }

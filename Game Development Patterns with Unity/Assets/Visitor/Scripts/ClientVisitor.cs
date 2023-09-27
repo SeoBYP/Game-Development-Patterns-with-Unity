@@ -6,25 +6,25 @@ namespace Chapter.Visitor
 {
     public class ClientVisitor : MonoBehaviour
     {
-        public PowerUp enginePowerUp;
+        public PowerUp shoosePowerUp;
         public PowerUp shieldPowerUp;
         public PowerUp weaponPowerUp;
 
-        private BikeController _bikeController;
+        private GameController _gameController;
 
         void Start()
         {
-            _bikeController = gameObject.AddComponent<BikeController>();
+            _gameController = gameObject.AddComponent<GameController>();
         }
 
         private void OnGUI()
         {
             if (GUILayout.Button("Power UP Shield"))
-                _bikeController.Accept(shieldPowerUp);
-            if (GUILayout.Button("Power UP Engine"))
-                _bikeController.Accept(enginePowerUp);
+                _gameController.Accept(shieldPowerUp);
+            if (GUILayout.Button("Power UP Shoose"))
+                _gameController.Accept(shoosePowerUp);
             if (GUILayout.Button("Power UP Weapon"))
-                _bikeController.Accept(weaponPowerUp);
+                _gameController.Accept(weaponPowerUp);
         }
     }
 

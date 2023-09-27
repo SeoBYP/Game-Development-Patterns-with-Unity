@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02c58151adea2ff47a8fd5f1b6675900, type: 3}
-  m_Name: Engine
+  m_Name: Shoose
   m_EditorClassIdentifier: 
-  powerupName: Engine
+  powerupName: Shoose
   powerupPrefab: {fileID: 0}
-  powerupDescription: Engine
+  powerupDescription: Shoose
   healShield: 0
-  turboBoost: 20.8
+  Boost: 31.7
   weaponRange: 14
-  weaponStrength: 22
+  weaponStrength: 38.1

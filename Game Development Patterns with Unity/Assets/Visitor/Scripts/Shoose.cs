@@ -4,27 +4,27 @@ using UnityEngine.SocialPlatforms;
 
 namespace Chapter.Visitor
 {
-    public class BikeEngine : MonoBehaviour, IBikeElement
+    public class Shoose : MonoBehaviour, IVisitorElement
     {
-        public float turboBoost = 25.0f;
-        public float maxTurboBoost = 200.0f;
+        public float Boost = 25.0f;
+        public float maxBoost = 200.0f;
 
-        private bool _isTurboOn;
+        private bool _isSprintOn;
         private float _defaultSpeed = 300.0f;
 
         public float CurrentSpeed
         {
             get
             {
-                if (_isTurboOn)
-                    return _defaultSpeed + turboBoost;
+                if (_isSprintOn)
+                    return _defaultSpeed + Boost;
                 return _defaultSpeed;
             }
         }
 
-        public void ToggleTurbo()
+        public void ToggleSprint()
         {
-            _isTurboOn = !_isTurboOn;
+            _isSprintOn = !_isSprintOn;
         }
 
         public void Accept(IVisitor visitor)
@@ -36,7 +36,7 @@ namespace Chapter.Visitor
         {
             GUI.color = Color.green;
 
-            GUI.Label(new Rect(125, 0, 200, 20), " Turbo Boost :" + turboBoost);
+            GUI.Label(new Rect(125, 0, 200, 20), " Sprint :" + Boost);
         }
     }
 }

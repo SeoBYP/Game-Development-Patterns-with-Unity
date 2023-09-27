@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Chapter.Visitor
 {
-    public class BikeShield : MonoBehaviour, IBikeElement
+    public class Shield : MonoBehaviour, IVisitorElement
     {
         public float health = 50.0f;
 

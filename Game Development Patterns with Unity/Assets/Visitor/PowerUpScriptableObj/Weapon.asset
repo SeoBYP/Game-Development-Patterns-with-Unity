@@ -16,6 +16,6 @@ MonoBehaviour:
   powerupPrefab: {fileID: 0}
   powerupDescription: Weapon
   healShield: 0
-  turboBoost: 27.5
-  weaponRange: 3
+  Boost: 30.3
+  weaponRange: 0
   weaponStrength: 37.1

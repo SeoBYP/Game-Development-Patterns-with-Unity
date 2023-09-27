@@ -6,9 +6,8 @@ namespace Chapter.Visitor
 {
     public interface IVisitor
     {
-        void Visit(BikeWeapon bikeWeapon);
-        void Visit(BikeShield bikeWeapon);
-        void Visit(BikeEngine bikeWeapon);
+        void Visit(Weapon weapon);
+        void Visit(Shield shield);
+        void Visit(Shoose shoose);
     }
-
 }

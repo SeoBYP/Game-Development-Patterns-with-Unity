@@ -4,10 +4,9 @@ using UnityEngine;
 
 namespace Chapter.EventBus
 {
-    public class HUDController : MonoBehaviour, EventListener<GameStatesEvent>
+    public class PlayerController : MonoBehaviour,EventListener<GameStatesEvent>
     {
-        private bool _isDispalyOn;
-
+        private string _status;
         private void OnEnable()
         {
             this.EventStartingListening<GameStatesEvent>();
@@ -18,29 +17,29 @@ namespace Chapter.EventBus
             this.EventStopListening<GameStatesEvent>();
         }
 
-        private void DisplayHUD()
+        private void GameStart()
         {
-            _isDispalyOn = true;
+            _status = "Game Started";
+        }
+        private void GameStoped()
+        {
+            _status = "Stoped";
         }
 
         private void OnGUI()
         {
-            if (_isDispalyOn)
-            {
-                if(GUILayout.Button("Stop Game"))
-                {
-                    _isDispalyOn = false;
-                    GameEventManager.TriggerEvent(new GameStatesEvent{
-                        gameEventType = GameEventType.STOP});
-                }
-            }
+            GUI.color = Color.green;
+            GUI.Label(new Rect(10, 60, 200, 20), "Game Status : " + _status);
         }
 
         public void OnEvent(GameStatesEvent eventType)
         {
             switch(eventType.gameEventType){
                 case GameEventType.START:
-                    DisplayHUD();
+                    GameStart();
+                    break;
+                case GameEventType.STOP:
+                    GameStoped();
                     break;
             }
         }

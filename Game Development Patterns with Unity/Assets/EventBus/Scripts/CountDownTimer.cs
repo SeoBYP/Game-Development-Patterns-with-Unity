@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 namespace Chapter.EventBus
 {
-    public class CountDownTimer : MonoBehaviour
+    public class CountDownTimer : MonoBehaviour, EventListener<GameStatesEvent>
     {
         private float _currentTime;
         private float _duration = 3.0f;
 
         private void OnEnable()
         {
-            RaceEventBus.Subscribe(RaceEventType.COUNTDOWN, StartTimer);
+            this.EventStartingListening<GameStatesEvent>();
         }
         private void OnDisable()
         {
-            RaceEventBus.Unsubscribe(RaceEventType.COUNTDOWN, StartTimer);
+            this.EventStopListening<GameStatesEvent>();
         }
 
         private void StartTimer()
@@ -26,13 +27,23 @@ namespace Chapter.EventBus
         {
             _currentTime = _duration;
 
-            while(_currentTime > 0)
+            while (_currentTime > 0)
             {
                 yield return new WaitForSeconds(1.0f);
                 _currentTime--;
             }
 
-            RaceEventBus.Publish(RaceEventType.START);
+            GameEventManager.TriggerEvent(new GameStatesEvent{
+                gameEventType = GameEventType.START});
+        }
+
+        public void OnEvent(GameStatesEvent eventType)
+        {
+            switch(eventType.gameEventType){
+                case GameEventType.COUNTDOWN:
+                    StartTimer();
+                    break;
+            }
         }
 
         private void OnGUI()

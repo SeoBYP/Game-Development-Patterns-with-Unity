@@ -41,9 +41,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/EventBus/Scripts/ClientEventBus.cs" />
-     <Compile Include="Assets/EventBus/Scripts/RaceEventBus.cs" />
      <Compile Include="Assets/Strategy/Scripts/BoppingManeuver.cs" />
      <Compile Include="Assets/Strategy/Scripts/FallbackManeuver.cs" />
+     <Compile Include="Assets/EventBus/Scripts/GameEventManager.cs" />
      <Compile Include="Assets/Facade/Scripts/ClientFacade.cs" />
      <Compile Include="Assets/Adapter/Scripts/InventorySystem.cs" />
      <Compile Include="Assets/Strategy/ReadMe.cs" />
@@ -58,11 +58,11 @@
      <Compile Include="Assets/Observer/Scripts/Observer.cs" />
      <Compile Include="Assets/Visitor/Scripts/PickUp.cs" />
      <Compile Include="Assets/FiniteStateMachine/Scripts/BikeStartState.cs" />
-     <Compile Include="Assets/EventBus/Scripts/RaceEventType.cs" />
      <Compile Include="Assets/Decorator/Scripts/WeaponAttachment.cs" />
      <Compile Include="Assets/Observer/Scripts/HUDController.cs" />
      <Compile Include="Assets/Observer/Scripts/BikeController.cs" />
      <Compile Include="Assets/ServiceLocator/Scripts/ServiceLocator.cs" />
+     <Compile Include="Assets/EventBus/Scripts/GameEventType.cs" />
      <Compile Include="Assets/SingleTonPattens/Scripts/SingleTon.cs" />
      <Compile Include="Assets/SingleTonPattens/Scripts/SingletonExample.cs" />
      <Compile Include="Assets/ServiceLocator/Scripts/ClientServiceLocator.cs" />
@@ -116,11 +116,11 @@
      <Compile Include="Assets/Visitor/Scripts/PowerUp.cs" />
      <Compile Include="Assets/Facade/Scripts/BikeEngine.cs" />
      <Compile Include="Assets/Spatial Partition/Scripts/BikeController.cs" />
-     <Compile Include="Assets/EventBus/Scripts/BikeController.cs" />
      <Compile Include="Assets/Visitor/ReadMe.cs" />
      <Compile Include="Assets/Spatial Partition/ReadMe.cs" />
      <Compile Include="Assets/Adapter/Scripts/IInventorySystem.cs" />
      <Compile Include="Assets/Spatial Partition/Scripts/Segment.cs" />
+     <Compile Include="Assets/EventBus/Scripts/PlayerController.cs" />
      <Compile Include="Assets/FiniteStateMachine/Scripts/ClientState.cs" />
      <Compile Include="Assets/Visitor/Scripts/IVisitor.cs" />
      <Compile Include="Assets/Spatial Partition/Scripts/Track.cs" />

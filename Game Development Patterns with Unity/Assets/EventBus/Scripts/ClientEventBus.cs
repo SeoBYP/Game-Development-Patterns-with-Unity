@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace EventBus.Scripts
 {
-    public class ClientEventBus : MonoBehaviour
+    public class ClientEventBus : MonoBehaviour,EventListener<GameStatesEvent>
     {
         private bool _isButtonEnabled;
 
@@ -13,19 +13,19 @@ namespace EventBus.Scripts
         {
             gameObject.AddComponent<HUDController>();
             gameObject.AddComponent<CountDownTimer>();
-            gameObject.AddComponent<BikeController>();
+            gameObject.AddComponent<PlayerController>();
 
             _isButtonEnabled = true;
         }
 
         private void OnEnable()
         {
-            RaceEventBus.Subscribe(RaceEventType.STOP, ReStart);
+            this.EventStartingListening<GameStatesEvent>();
         }
 
         private void OnDisable()
         {
-            RaceEventBus.Unsubscribe(RaceEventType.STOP, ReStart);
+            this.EventStopListening<GameStatesEvent>();
         }
 
         private void ReStart()
@@ -40,8 +40,18 @@ namespace EventBus.Scripts
                 if(GUILayout.Button("Start CountDown"))
                 {
                     _isButtonEnabled= false;
-                    RaceEventBus.Publish(RaceEventType.COUNTDOWN);
+                    GameEventManager.TriggerEvent(new GameStatesEvent{
+                    gameEventType = GameEventType.COUNTDOWN});
                 }
+            }
+        }
+
+        public void OnEvent(GameStatesEvent eventType)
+        {
+            switch(eventType.gameEventType){
+                case GameEventType.STOP:
+                    ReStart();
+                    break;
             }
         }
     }
